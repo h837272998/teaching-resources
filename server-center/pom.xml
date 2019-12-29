@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>teaching-resources</artifactId>
+        <groupId>cn.onb.tr</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>server-center</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>user-server</module>
+        <module>file-server</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.onb.tr</groupId>
+            <artifactId>trbase-spring-boot-starter</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.onb.tr</groupId>
+            <artifactId>trredis-spring-boot-starter</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.onb.tr</groupId>
+            <artifactId>trdb-spring-boot-starter</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.onb.tr</groupId>
+            <artifactId>trclient-spring-boot-autoconfigure</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+</project>
